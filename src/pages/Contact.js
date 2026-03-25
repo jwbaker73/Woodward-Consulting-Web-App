@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin, Send } from 'lucide-react';
 export default function Contact() {
   const [formState, setFormState] = React.useState('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setFormState('submitting');
     setTimeout(() => setFormState('success'), 1500);
